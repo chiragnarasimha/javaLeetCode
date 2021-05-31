@@ -2,6 +2,9 @@ package com.chirag.learnJava.medium.addtwonumbers;
 
 import com.chirag.learnJava.medium.ListNode;
 
+import static com.chirag.learnJava.ChiragHelperFunctions.printList;
+import static com.chirag.learnJava.ChiragHelperFunctions.printRunTime;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -37,16 +40,5 @@ public class Main {
 
     }
 
-    public static void printList(ListNode node) {
-        System.out.print("The list contains ");
-        while (node != null) {
-            System.out.print(node.val + " ");
-            node = node.next;
-        }
-        System.out.println();
-    }
 
-    public static void printRunTime(double startTime) {
-        System.out.println("Code Execution Time ->> " + ((System.nanoTime() - startTime) * 1e-6) + " ms");
-    }
 }
