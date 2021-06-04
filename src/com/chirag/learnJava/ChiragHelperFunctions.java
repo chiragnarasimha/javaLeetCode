@@ -5,11 +5,14 @@ import com.chirag.learnJava.medium.ListNode;
 /**
  * <h1>ChiragHelperFunctions</h1>
  * <p>
- * This class includes all the commonly used methods during the dev phase.
- * These methods are mostly just used for debugging/code optimisation phase
+ * 1. This class includes all the commonly used methods during the dev phase.
  * </p>
- *
- * <b>Note:</b> Please do not include these methods to the code that will be submitted to Leet Code
+ * <p>
+ * 2. These methods are mostly just used for debugging/code optimisation phase
+ * </p>
+ * <br>
+ * <h1>Note:</h1>
+ * <p>Please do not include these methods to the code that will be submitted to Leet Code</p>
  *
  * @author Chirag Narasimha Murthy
  * @since 31 May 2021
