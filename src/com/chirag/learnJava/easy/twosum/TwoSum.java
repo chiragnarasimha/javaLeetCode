@@ -42,8 +42,7 @@ public class TwoSum {
             indexCurrentValue = i;
             if (previousValues.containsKey(targetCompliment)) {
                 return new int[]{previousValues.get(targetCompliment), indexCurrentValue};
-            }
-            else {
+            } else {
                 previousValues.put(nums[i], i);
             }
 
@@ -62,8 +61,7 @@ public class TwoSum {
             int anotherNum = target - nums[i];
             if (numIndexMap.containsKey(anotherNum)) {
                 return new int[]{numIndexMap.get(anotherNum), i};
-            }
-            else {
+            } else {
                 numIndexMap.put(nums[i], i);
             }
 
@@ -71,13 +69,27 @@ public class TwoSum {
             anotherNum = target - nums[j];
             if (numIndexMap.containsKey(anotherNum)) {
                 return new int[]{numIndexMap.get(anotherNum), j};
-            }
-            else {
+            } else {
                 numIndexMap.put(nums[j], j);
             }
 
         }
 
         return null;
+    }
+
+    public int[] twoSum3(int[] nums, int target) {
+        HashMap<Integer, Integer> complimentMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int compliment = target - nums[i];
+            System.out.println(nums[i]);
+            System.out.println(complimentMap.get(compliment));
+            if (complimentMap.get(compliment) != null) {
+                return new int[]{complimentMap.get(compliment), i};
+            } else {
+                complimentMap.put(nums[i], i);
+            }
+        }
+        return new int[]{};
     }
 }

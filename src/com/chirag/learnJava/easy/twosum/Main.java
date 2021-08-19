@@ -42,6 +42,12 @@ public class Main {
         printIntListItems(result);
 
         System.out.println("The second solution took " + timer.stop());
+
+        System.out.println("-".repeat(80));
+        timer.start();
+        result = test.twoSum3(new int[]{2, 7, 11, 15}, 9);
+        printIntListItems(result);
+        System.out.println("The third solution took " + timer.stop());
     }
 
     public static void printIntListItems(int[] listToPrint) {
